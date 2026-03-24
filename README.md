@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ Sentinel (Demo)
 
-## Getting Started
+**Sentinel** is a decentralized data security and legacy transfer suite concept. It acts as a sophisticated management layer designed to leverage the **Shelby Protocol** for secure data persistence.
 
-First, run the development server:
+> **⚠️ Simulation Notice:** This is a **purely client-side demo version**. While the architecture is designed for the Aptos Blockchain and Shelby Protocol, all network interactions, vault deployments, and heartbeat executions are currently **simulated** for evaluation and UI/UX demonstration purposes. No real Testnet assets or on-chain transactions are required.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Two Core Protocols
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sentinel offers two distinct conceptual ways to protect your digital life:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Vault Protocol (Secure Storage)
+A module designed for encrypting and "vaulting" sensitive files.
+* **Simulated Shelby Integration:** Demonstrates how data would be fragmented and stored across decentralized nodes using the [Shelby Protocol](https://docs.shelby.xyz/protocol).
+* **Local Encryption:** Files are processed client-side to showcase the "Seal to Vault" workflow.
+* **Persistence Mockup:** Users can toggle expiration settings (7d to 365d) to see how storage lifecycle management would function.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Legacy Protocol (Dead Man's Switch)
+A conceptual automated transfer system for sensitive info (seed phrases/keys) triggered by owner inactivity.
+* **Heartbeat Simulation:** Features a functional countdown timer that resets via a "Heartbeat" button, mimicking on-chain check-ins.
+* **Auto-Execution Demo:** Once the timer hits zero, the "Sentinel" triggers a simulated dispatch to a beneficiary address.
+* **Protocol History:** Includes a live log that records these simulated system events in real-time.
 
-## Learn More
+## 🛠️ Tech Stack
+* **Frontend:** Next.js 14 (App Router), Tailwind CSS, Lucide React.
+* **Logic:** Simulated Aptos Move VM interactions and client-side AES-256 encryption.
+* **Infrastructure Concept:** Built to follow the [Shelby Protocol](https://docs.shelby.xyz/protocol) architecture.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created for evaluation purposes - 2026*

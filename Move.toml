@@ -1,0 +1,13 @@
+[package]
+name = "shelby_legacy"
+version = "1.0.0"
+authors = ["khn0x"] # Names must be in quotes
+
+[addresses]
+# This is your alias used throughout the Move code
+shelby_addr = "0xade7474c50d2d7accfeb016b460242f14bf784c17f1eb487990b1cc8d17772bb"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
